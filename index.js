@@ -18,7 +18,8 @@ fetch(url).then(response => {
                         if (!result[label]) {
                             result[label] = [];
                         }
-                        result[label].push({name: entry.name, url: entry.url});
+
+                        result[label].push({name: entry.name, url: entry.shortUrl});
                     }
                 }
 
