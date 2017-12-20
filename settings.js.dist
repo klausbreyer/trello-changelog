@@ -1,4 +1,2 @@
-module.exports.key = '';    //the trello token like you can obtain here: https://trello.com/app-key
-module.exports.token = '';  //the trello token like you can obtain here: https://trello.com/app-key
-module.exports.board = '';  //the board id from your trello url
-module.exports.list = '';   //try to move a card to another list and inspect the select element with the lists to obtain the list id.
+module.exports.key = '';    //a trello app key  - you can get it here: https://trello.com/app-key
+module.exports.token = '';  //a trello token - you can get it here: https://trello.com/app-key
