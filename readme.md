@@ -1,7 +1,7 @@
 trello-changelog
 ===========
 
-Simple script that generates a summary from a labelled Trello list. Very simple releasenotes for agile sprints.
+Simple script that generates a summary from a labelled Trello list. Very simple changelogs for agile sprints.
 
 
 ![Screenshot](https://github.com/klausbreyer/trello-changelog/raw/master/screenshot.png)
@@ -32,7 +32,9 @@ Just run trello-changelog.
 $ trello-changelog
 ```
 
-On first start it will ask for trello api key and an user token.
+At the first start you will be asked for a trello app key and a trello user token. You do not need to enter them again when you restart the program. 
+
+After that you will be asked for a board and a list of the board. As a result you get all cards of the selected list - grouped by labels. 
 
 LICENSE
 =======
