@@ -7,7 +7,7 @@ const inquirer = require('inquirer');
 
 let settings = null;
 try {
-     settings = require("./settings.json");
+    settings = require("../settings.json");
     fetchBoards(settings);
 
 }
