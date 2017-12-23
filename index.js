@@ -7,7 +7,7 @@ var settings = null;
 
 
 try {
-    settings = require("./settings.json");
+    settings = require("~/.trello-changelog-settings.json");
     fetchBoards(settings);
 } catch (e) {
     var questions = [{
@@ -28,7 +28,7 @@ try {
     console.log('You need an trello app key as well as a user token. You can grab both of them here: https://trello.com/app-key');
     inquirer.prompt(questions).then(function (answers) {
         settings = answers;
-        fs.writeFile('./settings.json', JSON.stringify(settings, null, 2), 'utf-8', null);
+        fs.writeFile('~/.trello-changelog-settings.json', JSON.stringify(settings, null, 2), 'utf-8', null);
         fetchBoards();
     });
 }
