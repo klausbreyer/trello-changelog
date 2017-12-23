@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "trello-releasenotes": "index.js"
+  },
   "dependencies": {
     "inquirer": "^4.0.1",
     "node-fetch": "^1.7.3"
-  }
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:klausbreyer/trello-releasenotes.git"
+  },
+  "author": "Klaus Breyer <kb@klaus-breyer.de> (https://klaus-breyer.de)"
 }
