@@ -1,10 +1,10 @@
 {
-  "name": "helper-trello-releasenotes",
+  "name": "trello-changelog",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "trello-releasenotes": "index.js"
+    "trello-changelog": "index.js"
   },
   "dependencies": {
     "inquirer": "^4.0.1",
@@ -13,7 +13,7 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:klausbreyer/trello-releasenotes.git"
+    "url": "git@github.com:klausbreyer/trello-changelog.git"
   },
   "author": "Klaus Breyer <kb@klaus-breyer.de> (https://klaus-breyer.de)"
 }

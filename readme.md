@@ -1,10 +1,10 @@
-trello-releasenotes
+trello-changelog
 ===========
 
 Simple script that generates a summary from a labelled Trello list. Very simple releasenotes for agile sprints.
 
 
-![Screenshot](https://github.com/klausbreyer/trello-releasenotes/raw/master/screenshot.png)
+![Screenshot](https://github.com/klausbreyer/trello-changelog/raw/master/screenshot.png)
 
 ## Installation
 
@@ -12,13 +12,13 @@ Simple script that generates a summary from a labelled Trello list. Very simple 
 You can install this executable using npm:
 
 ```bash
-$ npm install trello-releasenotes -g
+$ npm install trello-changelog -g
 ```
 
 or yarn:
 
 ```bash
-$ yarn add global trello-releasenotes
+$ yarn add global trello-changelog
 ```
 
 Please make sure, that you install it global. 
@@ -26,10 +26,10 @@ Please make sure, that you install it global.
 
 ## Usage
 
-Just run trello-releasenotes. 
+Just run trello-changelog. 
 
 ```bash
-$ trello-releasenotes
+$ trello-changelog
 ```
 
 On first start it will ask for trello api key and an user token.
