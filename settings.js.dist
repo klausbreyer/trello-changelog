@@ -1,2 +1,0 @@
-module.exports.key = '';    //a trello app key  - you can get it here: https://trello.com/app-key
-module.exports.token = '';  //a trello token - you can get it here: https://trello.com/app-key

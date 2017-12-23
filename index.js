@@ -3,11 +3,12 @@
 var fetch = require("node-fetch");
 var fs = require('fs');
 var inquirer = require('inquirer');
+var os = require('os');
 var settings = null;
 
 
 try {
-    settings = require("~/.trello-changelog-settings.json");
+    settings = require(`${os.homedir()}/.trello-changelog-settings.json`);
     fetchBoards(settings);
 } catch (e) {
     var questions = [{
@@ -28,7 +29,7 @@ try {
     console.log('You need an trello app key as well as a user token. You can grab both of them here: https://trello.com/app-key');
     inquirer.prompt(questions).then(function (answers) {
         settings = answers;
-        fs.writeFile('~/.trello-changelog-settings.json', JSON.stringify(settings, null, 2), 'utf-8', null);
+        fs.writeFile(`${os.homedir()}/.trello-changelog-settings.json`, JSON.stringify(settings, null, 2), 'utf-8', null);
         fetchBoards();
     });
 }
