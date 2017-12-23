@@ -1,14 +1,11 @@
-'use strict';
-
 var fetch = require("node-fetch");
-
 var fs = require('fs');
-
 var inquirer = require('inquirer');
-
 var settings = null;
+
+
 try {
-    settings = require("../settings.json");
+    settings = require("./settings.json");
     fetchBoards(settings);
 } catch (e) {
     var questions = [{
@@ -108,7 +105,7 @@ function fetchCards(board, list) {
                             if (!cards[label]) {
                                 cards[label] = [];
                             }
-                            cards[label].push({ name: entry.name, url: entry.shortUrl });
+                            cards[label].push({name: entry.name, url: entry.shortUrl});
                         }
                     }
                 }
